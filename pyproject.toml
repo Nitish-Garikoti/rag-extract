@@ -1,0 +1,34 @@
+[project]
+name = "tifin-rag-sys"
+version = "0.1.0"
+description = "RAG system for TIFIN financial document Q&A"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langchain-pinecone>=0.1.0",
+    "langchain-experimental>=0.0.59",
+    "langchain-text-splitters>=0.2.0",
+    "pinecone-client>=3.2.0",
+    "pypdf>=4.2.0",
+    "ragas>=0.1.9",
+    "datasets>=2.19.0",
+    "rank-bm25>=0.2.2",
+    "pandas>=2.2.0",
+    "python-dotenv>=1.0.0",
+    "tqdm>=4.66.0",
+    "pydantic-settings>=2.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
+
+[project.scripts]
+serve = "main:app"
