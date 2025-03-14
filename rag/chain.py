@@ -1,9 +1,9 @@
 from operator import itemgetter
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.output_parsers import StrOutputParser
-from langchain.schema.runnable import RunnablePassthrough
+from langchain_core.runnables import RunnablePassthrough
 
 from utils.config import settings
 
