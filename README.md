@@ -1,4 +1,4 @@
-# TIFIN RAG System
+# RAG System
 
 A Retrieval-Augmented Generation (RAG) pipeline for financial document Q&A, built with LangChain, Pinecone, and OpenAI. Originally developed as a notebook experiment across 6 retrieval strategies, now refactored into a production-ready FastAPI service.
 
@@ -202,7 +202,7 @@ curl -X POST http://localhost:8000/query \
 
 ## Experiments (from Notebook)
 
-The original `tifin_rag_sys.ipynb` ran 6 experiments to benchmark chunking strategies, embedding models, and retrieval approaches. Results are evaluated using [RAGAS](https://docs.ragas.io/) metrics.
+The original `rag_sys.ipynb` ran 6 experiments to benchmark chunking strategies, embedding models, and retrieval approaches. Results are evaluated using [RAGAS](https://docs.ragas.io/) metrics.
 
 | Experiment | Chunk Size | Overlap | Embedding Model | k | Retrieval | Notes |
 |---|---|---|---|---|---|---|
